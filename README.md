@@ -5,7 +5,7 @@
 <p>A full basic outline of Data Structures and Algorithms using C/C++. A secondary creation of my first repository of the same topic but in <a href="">Java</a>.</p>
 
 ## Data Structures
-<h6>Includes the following Data Structures:</h6>
+<h4>Includes the following Data Structures:</h4>
 <ul>
     <li>Arrays</li>
     <li>Linked Lists</li>
@@ -20,7 +20,7 @@
 </ul>
 
 ## Algorithms
-<h6>Includes the following Algorithms:</h6>
+<h4>Includes the following Algorithms:</h4>
 <ul>
     <li>Sorting</li>
     <li>Recursion</li>
@@ -32,12 +32,12 @@
 
 ## Resources Used
 
-<p>Throughout my DSA journey, I have used the following resources to help me. I hope they will help you as well:</p>
+<h4>Throughout my DSA journey, I have used the following resources to help me. I hope they will help you as well:</h4>
 <ul>
-    <li><a href="https://www.geeksforgeeks.org/data-structures/">Data Structures with GeeksForGeeks</a></li>
-    <li><a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/">Algorithms with GeeksForGeeks</a></li>
-    <li><a href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O">Abdul Bari Algorithms Course</a></li>
-    <li><a href="https://www.youtube.com/playlist?list=PLl4Y2XuUavmtTOvFcW3HfI1oQ3hsgkB3a">Coding Blocks Graphs Course</a></li>
+    <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank">Data Structures with GeeksForGeeks</a></li>
+    <li><a href="https://www.geeksforgeeks.org/fundamentals-of-algorithms/" target="_blank">Algorithms with GeeksForGeeks</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Abdul Bari Algorithms Course</a></li>
+    <li><a href="https://www.youtube.com/playlist?list=PLl4Y2XuUavmtTOvFcW3HfI1oQ3hsgkB3a" target="_blank">Coding Blocks Graphs Course</a></li>
     <li>Algorith Design Manual (2nd Edition) - Steve S. Skiena</li>
 </ul>
 
