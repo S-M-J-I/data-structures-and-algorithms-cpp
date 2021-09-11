@@ -1,5 +1,5 @@
-<h1>Data Structures and Algorithms</h1>
-<h5>Using C/C++</h5>
+## Data Structures and Algorithms
+<h6>Using C/C++</h6>
 
 ## Overview
 <p>A full basic outline of Data Structures and Algorithms using C/C++. A secondary creation of my first repository of the same topic but in <a href="">Java</a>.</p>
