@@ -1,10 +1,10 @@
-## Data Structures and Algorithms
+# Data Structures and Algorithms
 <h6>Using C/C++</h6>
 
 ## Overview
 <p>A full basic outline of Data Structures and Algorithms using C/C++. A secondary creation of my first repository of the same topic but in <a href="">Java</a>.</p>
 
-# Data Structures
+## Data Structures
 <h6>Includes the following Data Structures:</h6>
 <ul>
     <li>Arrays</li>
@@ -19,7 +19,7 @@
     <li>Advanced Trees <i>(ongoing)</i></li>
 </ul>
 
-# Algorithms
+## Algorithms
 <h6>Includes the following Algorithms:</h6>
 <ul>
     <li>Sorting</li>
@@ -30,7 +30,7 @@
 </ul>
 
 
-# Resources Used
+## Resources Used
 
 <p>Throughout my DSA journey, I have used the following resources to help me. I hope they will help you as well:</p>
 <ul>
@@ -41,5 +41,5 @@
     <li>Algorith Design Manual (2nd Edition) - Steve S. Skiena</li>
 </ul>
 
-# Author
+### Author
 <p><i>By S M Jishanul Islam</i></p>
