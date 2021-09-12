@@ -1,10 +1,4 @@
-#include <bits/stdc++.h>
-#define fastio ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-
-using namespace std;
-
-class DisjointSet
-{
+class DisjointSet {
 private:
     /**
      * Take a rank array for Union
@@ -82,29 +76,3 @@ public:
         }
     }
 };
-
-int main()
-{
-    DisjointSet djset(5);
-    djset.Union(0, 2);
-    djset.Union(4, 2);
-    djset.Union(3, 1);
-    if (djset.Find(4) == djset.Find(0))
-    {
-        cout << "Yes\n";
-    }
-    else
-    {
-        cout << "No\n";
-    }
-
-    if (djset.Find(1) == djset.Find(0))
-    {
-        cout << "Yes\n";
-    }
-    else
-    {
-        cout << "No\n";
-    }
-    return 0;
-}
