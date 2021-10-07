@@ -10,9 +10,11 @@ int hashFunction(int key)
 void Insert(int hashTable[], int n, int data)
 {
     int index = hashFunction(data);
+    int turn = 0;
     while(hashTable[index] != 0)
     {
-        index = (index == n) ? 0 : (index+1 % 10);
+        index = (index == n) ? 0 : (index + (int) pow(turn, 2)) % n;
+        turn++;
     }
     hashTable[index] = data;
 }

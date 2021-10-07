@@ -4,6 +4,44 @@
 
 using namespace std;
 
+struct Activity {
+    string name;
+    int start, finish;
+
+    Activity(string name, int start, int finish) {
+        this->name = name;
+        this->start = start;
+        this->finish = finish;
+    }
+};
+
+bool compare(Activity activity1, Activity activity2) {
+    return activity1.finish < activity2.finish;
+}
+
+void ActivitySelctor(const vector<Activity>& times) {
+
+    vector<Activity> A;
+
+    sort(times.begin(), times.end(), compare);
+
+    int n = times.size();
+    int i = 0;
+
+    for(int m = 1; m < n; ++m) {
+        if(times[m].start >= times[m].finish) {
+            A.push_back(times[m]);
+            i = m;
+        }
+    }
+
+    for(Activity a : times) {
+        cout << a.name << "\n";
+    }
+
+}
+
+
 vector<int> ActivitySelctor(const vector<int>& start, const vector<int>& finish) {
 
     vector<int> A = {0};
@@ -35,6 +73,7 @@ int main() {
         cout << i << " ";
     }
     cout << "\n";
+
 
     return 0;
 }
