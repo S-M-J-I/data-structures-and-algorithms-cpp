@@ -10,11 +10,13 @@ using namespace std;
 */
 
 int code(char ch) {
-    if(ch == 'a') return 1;
-    else if (ch == 'b') return 2;
-    else if (ch == 'c') return 3;
-    else if (ch == 'd') return 4;
-    else if (ch == 'e') return 5;
+    string alphabet = "abcdefghijklmnopqrstuvwxyz";
+
+    for(int i = 0; i < alphabet.length(); ++i) {
+        if(ch == alphabet[i]) {
+            return i + 1;
+        }
+    }
 }
 
 ll hash_string(string str) {
@@ -36,9 +38,6 @@ ll rabin_karp(string text, string pattern) {
 
     ll pattern_value = hash_string(pattern);
     ll current_pattern_value = 0;
-
-
-    cout << pattern_value << "\n";
 
     for(int i = 0; i <= (text.length() - pattern.length()); i++) {
         current_pattern_value = hash_string( text.substr(i, pattern.length()) );
