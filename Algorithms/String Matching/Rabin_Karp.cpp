@@ -4,16 +4,12 @@
 
 using namespace std;
 
-/**
- * *    Work with 5 chars only 
- * *        a - 1 ; b - 2 ; c - 3 ; d - 4 ; e - 5 ;
-*/
 
 int code(char ch) {
-    string alphabet = "abcdefghijklmnopqrstuvwxyz";
+    string characters = "abcdefghijklmnopqrstuvwxyz";
 
-    for(int i = 0; i < alphabet.length(); ++i) {
-        if(ch == alphabet[i]) {
+    for(int i = 0; i < characters.length(); ++i) {
+        if(ch == characters[i]) {
             return i + 1;
         }
     }
@@ -50,6 +46,13 @@ ll rabin_karp(string text, string pattern) {
     }
 }
 
+string to_lower(string str) {
+    for_each(str.begin(), str.end(), [](char &c) {
+        c = tolower(c);
+    });
+
+    return str;
+}
 
 int main() {
     string text, pattern;
@@ -62,5 +65,6 @@ int main() {
     getline(cin, pattern); 
     fflush(stdout);
 
-    cout << rabin_karp(text, pattern);
+    
+    cout << rabin_karp(to_lower(text), to_lower(pattern));
 }
