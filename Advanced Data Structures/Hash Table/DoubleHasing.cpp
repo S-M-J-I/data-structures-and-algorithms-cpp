@@ -37,7 +37,7 @@ int main()
     Insert(hashTable, 24);
     Insert(hashTable, 43);
     Insert(hashTable, 74);
-    //Insert(&hashTable[hashFunction(19)], 10, 19);
+    Insert(hashTable, 19);
 
     for(int i=0; i<10; i++)
     {
