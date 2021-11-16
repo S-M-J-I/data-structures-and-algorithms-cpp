@@ -59,7 +59,9 @@ int KadaneAlgorithm(int arr[], int n)
         max_ending_here += arr[i];
         if(max_ending_here > max_so_far){
             max_so_far = max_ending_here;
-        } else if (max_ending_here < 0){
+        }
+        
+        if (max_ending_here < 0){
             max_ending_here = 0;
         }
     }
@@ -71,7 +73,7 @@ int KadaneAlgorithm(int arr[], int n)
 int main()
 {
     fastio;
-    int arr[]{ 5, -9, 20, -18, 5, -11, 10, -20, 24 };
+    int arr[]{3,2,-2,1};
     int n = sizeof(arr) / sizeof(arr[0]);
     int max_sum = maxSubArraySum(arr, 0, n - 1);
     cout << "Max sub-array sum is : " << max_sum << "\n";
