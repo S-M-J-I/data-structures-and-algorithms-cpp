@@ -9,6 +9,9 @@ struct HuffmanNode {
     char data;
     int freq;
     struct HuffmanNode *left, *right;
+
+    HuffmanNode() {}
+
     HuffmanNode(char data, int freq) {
         this->data = data;
         this->freq = freq;
@@ -45,9 +48,6 @@ void printCodes(const HuffmanNode *root, string str) {
 // huffman coding
 void HuffmanEncoding(const char data[], const int freq[], int size) {
     
-    // create a left right and root node
-    HuffmanNode *left, *right, *root;
-
     // create a min heap
     priority_queue<HuffmanNode*, vector<HuffmanNode*>, compare> minHeap;
 
@@ -57,26 +57,23 @@ void HuffmanEncoding(const char data[], const int freq[], int size) {
     }
 
     // while heap is not empty
-    while(!minHeap.empty()) {
+    while(minHeap.size() > 1) {
 
+        HuffmanNode* z = new HuffmanNode();
         // take the most minimum value as left
-        left = minHeap.top();
+        z->left = minHeap.top();
         minHeap.pop();
 
         // same for right
-        right = minHeap.top();
+        z->right = minHeap.top();
         minHeap.pop();
 
         // create their rrot node with the special character and the frequency is their sum
-        root = new HuffmanNode('$', left->freq + right->freq);
-
-        // assign the root left to left
-        root->left = left;
-        // same for right
-        root->right = right;
+        z->freq = z->left->freq + z->right->freq;
+        z->data = '$';
 
         // push the root to the minHeap
-        minHeap.push(root);
+        minHeap.push(z);
     }
 
     // print the heap from the most minimum root;
