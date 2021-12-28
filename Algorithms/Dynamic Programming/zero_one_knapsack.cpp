@@ -25,9 +25,9 @@ void ZeroOneKnapsack(const int price[], const int weight[], const int n, const i
             }
 
             // if the weight of item i is less than or equal to current total weight
-            else if (weight[i] <= w) {
+            else if (weight[i-1] <= w) {
                 // find the max between the value of the previous row and the (price of current item * price of prev item with the current weight - item weight)
-                k[i][w] = max( price[i]+k[i-1][w-weight[i]] , k[i-1][w] );
+                k[i][w] = max( price[i-1]+k[i-1][w-weight[i-1]] , k[i-1][w] );
             }
 
             // else just assign the value of the previous row
